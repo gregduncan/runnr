@@ -1,0 +1,1311 @@
+[{
+    "kph": "8.00kph",
+    "mph": "4.97mph",
+    "mpk": "7:30",
+    "mpm": "12:04",
+    "fiveK": "00:37:30",
+    "tenK": "01:15:00",
+    "halfMarathon": "02:38:15",
+    "marathon": "05:16:30"
+  },
+  {
+    "kph": "8.10kph",
+    "mph": "5.03mph",
+    "mpk": "7:25",
+    "mpm": "11:55",
+    "fiveK": "00:37:02",
+    "tenK": "01:14:04",
+    "halfMarathon": "02:36:17",
+    "marathon": "05:12:35"
+  },
+  {
+    "kph": "8.20kph",
+    "mph": "5.10mph",
+    "mpk": "7:19",
+    "mpm": "11:47",
+    "fiveK": "00:36:35",
+    "tenK": "01:13:10",
+    "halfMarathon": "02:34:23",
+    "marathon": "05:08:46"
+  },
+  {
+    "kph": "8.30kph",
+    "mph": "5.16mph",
+    "mpk": "7:14",
+    "mpm": "11:38",
+    "fiveK": "00:36:08",
+    "tenK": "01:12:17",
+    "halfMarathon": "02:32:31",
+    "marathon": "05:05:03"
+  },
+  {
+    "kph": "8.40kph",
+    "mph": "5.22mph",
+    "mpk": "7:08",
+    "mpm": "11:30",
+    "fiveK": "00:35:42",
+    "tenK": "01:11:25",
+    "halfMarathon": "02:30:42",
+    "marathon": "05:01:25"
+  },
+  {
+    "kph": "8.50kph",
+    "mph": "5.28mph",
+    "mpk": "7:04",
+    "mpm": "11:22",
+    "fiveK": "00:35:17",
+    "tenK": "01:10:35",
+    "halfMarathon": "02:28:56",
+    "marathon": "04:57:52"
+  },
+  {
+    "kph": "8.60kph",
+    "mph": "5.34mph",
+    "mpk": "6:59",
+    "mpm": "11:14",
+    "fiveK": "00:34:53",
+    "tenK": "01:09:46",
+    "halfMarathon": "02:27:12",
+    "marathon": "04:54:25"
+  },
+  {
+    "kph": "8.70kph",
+    "mph": "5.41mph",
+    "mpk": "6:54",
+    "mpm": "11:06",
+    "fiveK": "00:34:28",
+    "tenK": "01:08:57",
+    "halfMarathon": "02:25:31",
+    "marathon": "04:51:02"
+  },
+  {
+    "kph": "8.80kph",
+    "mph": "5.47mph",
+    "mpk": "6:49",
+    "mpm": "10:58",
+    "fiveK": "00:34:05",
+    "tenK": "01:08:10",
+    "halfMarathon": "02:23:51",
+    "marathon": "04:47:43"
+  },
+  {
+    "kph": "8.90kph",
+    "mph": "5.53mph",
+    "mpk": "6:44",
+    "mpm": "10:51",
+    "fiveK": "00:33:42",
+    "tenK": "01:07:24",
+    "halfMarathon": "02:22:14",
+    "marathon": "04:44:29"
+  },
+  {
+    "kph": "9.00kph",
+    "mph": "5.59mph",
+    "mpk": "6:40",
+    "mpm": "10:44",
+    "fiveK": "00:33:20",
+    "tenK": "01:06:40",
+    "halfMarathon": "02:20:40",
+    "marathon": "04:41:20"
+  },
+  {
+    "kph": "9.10kph",
+    "mph": "5.65mph",
+    "mpk": "6:35",
+    "mpm": "10:37",
+    "fiveK": "00:32:58",
+    "tenK": "01:05:56",
+    "halfMarathon": "02:19:07",
+    "marathon": "04:38:14"
+  },
+  {
+    "kph": "9.20kph",
+    "mph": "5.72mph",
+    "mpk": "6:31",
+    "mpm": "10:30",
+    "fiveK": "00:32:36",
+    "tenK": "01:05:13",
+    "halfMarathon": "02:17:36",
+    "marathon": "04:35:13"
+  },
+  {
+    "kph": "9.30kph",
+    "mph": "5.78mph",
+    "mpk": "6:27",
+    "mpm": "10:23",
+    "fiveK": "00:32:15",
+    "tenK": "01:04:30",
+    "halfMarathon": "02:16:07",
+    "marathon": "04:32:15"
+  },
+  {
+    "kph": "9.40kph",
+    "mph": "5.84mph",
+    "mpk": "6:23",
+    "mpm": "10:16",
+    "fiveK": "00:31:54",
+    "tenK": "01:03:49",
+    "halfMarathon": "02:14:40",
+    "marathon": "04:29:21"
+  },
+  {
+    "kph": "9.50kph",
+    "mph": "5.90mph",
+    "mpk": "6:19",
+    "mpm": "10:10",
+    "fiveK": "00:31:34",
+    "tenK": "01:03:09",
+    "halfMarathon": "02:13:15",
+    "marathon": "04:26:31"
+  },
+  {
+    "kph": "9.60kph",
+    "mph": "5.97mph",
+    "mpk": "6:15",
+    "mpm": "10:04",
+    "fiveK": "00:31:15",
+    "tenK": "01:02:30",
+    "halfMarathon": "02:11:52",
+    "marathon": "04:23:45"
+  },
+  {
+    "kph": "9.70kph",
+    "mph": "6.03mph",
+    "mpk": "6:11",
+    "mpm": "9:57",
+    "fiveK": "00:30:55",
+    "tenK": "01:01:51",
+    "halfMarathon": "02:10:30",
+    "marathon": "04:21:01"
+  },
+  {
+    "kph": "9.80kph",
+    "mph": "6.09mph",
+    "mpk": "6:07",
+    "mpm": "9:51",
+    "fiveK": "00:30:36",
+    "tenK": "01:01:13",
+    "halfMarathon": "02:09:11",
+    "marathon": "04:18:22"
+  },
+  {
+    "kph": "9.90kph",
+    "mph": "6.15mph",
+    "mpk": "6:04",
+    "mpm": "9:45",
+    "fiveK": "00:30:18",
+    "tenK": "01:00:36",
+    "halfMarathon": "02:07:52",
+    "marathon": "04:15:45"
+  },
+  {
+    "kph": "10.00kph",
+    "mph": "6.21mph",
+    "mpk": "6:00",
+    "mpm": "9:40",
+    "fiveK": "00:30:00",
+    "tenK": "01:00:00",
+    "halfMarathon": "02:06:36",
+    "marathon": "04:13:12"
+  },
+  {
+    "kph": "10.10kph",
+    "mph": "6.28mph",
+    "mpk": "5:56",
+    "mpm": "9:34",
+    "fiveK": "00:29:42",
+    "tenK": "00:59:24",
+    "halfMarathon": "02:05:20",
+    "marathon": "04:10:41"
+  },
+  {
+    "kph": "10.20kph",
+    "mph": "6.34mph",
+    "mpk": "5:53",
+    "mpm": "9:28",
+    "fiveK": "00:29:24",
+    "tenK": "00:58:49",
+    "halfMarathon": "02:04:07",
+    "marathon": "04:08:14"
+  },
+  {
+    "kph": "10.30kph",
+    "mph": "6.40mph",
+    "mpk": "5:50",
+    "mpm": "9:22",
+    "fiveK": "00:29:07",
+    "tenK": "00:58:15",
+    "halfMarathon": "02:02:54",
+    "marathon": "04:05:49"
+  },
+  {
+    "kph": "10.40kph",
+    "mph": "6.46mph",
+    "mpk": "5:46",
+    "mpm": "9:17",
+    "fiveK": "00:28:50",
+    "tenK": "00:57:41",
+    "halfMarathon": "02:01:43",
+    "marathon": "04:03:27"
+  },
+  {
+    "kph": "10.50kph",
+    "mph": "6.52mph",
+    "mpk": "5:43",
+    "mpm": "9:12",
+    "fiveK": "00:28:34",
+    "tenK": "00:57:08",
+    "halfMarathon": "02:00:34",
+    "marathon": "04:01:08"
+  },
+  {
+    "kph": "10.60kph",
+    "mph": "6.59mph",
+    "mpk": "5:40",
+    "mpm": "9:07",
+    "fiveK": "00:28:18",
+    "tenK": "00:56:36",
+    "halfMarathon": "01:59:26",
+    "marathon": "03:58:52"
+  },
+  {
+    "kph": "10.70kph",
+    "mph": "6.65mph",
+    "mpk": "5:37",
+    "mpm": "9:01",
+    "fiveK": "00:28:02",
+    "tenK": "00:56:04",
+    "halfMarathon": "01:58:19",
+    "marathon": "03:56:38"
+  },
+  {
+    "kph": "10.80kph",
+    "mph": "6.71mph",
+    "mpk": "5:34",
+    "mpm": "8:56",
+    "fiveK": "00:27:46",
+    "tenK": "00:55:33",
+    "halfMarathon": "01:57:13",
+    "marathon": "03:54:26"
+  },
+  {
+    "kph": "10.90kph",
+    "mph": "6.77mph",
+    "mpk": "5:30",
+    "mpm": "8:52",
+    "fiveK": "00:27:31",
+    "tenK": "00:55:02",
+    "halfMarathon": "01:56:08",
+    "marathon": "03:52:17"
+  },
+  {
+    "kph": "11.00kph",
+    "mph": "6.84mph",
+    "mpk": "5:27",
+    "mpm": "8:47",
+    "fiveK": "00:27:16",
+    "tenK": "00:54:32",
+    "halfMarathon": "01:55:05",
+    "marathon": "03:50:10"
+  },
+  {
+    "kph": "11.10kph",
+    "mph": "6.90mph",
+    "mpk": "5:25",
+    "mpm": "8:42",
+    "fiveK": "00:27:01",
+    "tenK": "00:54:03",
+    "halfMarathon": "01:54:03",
+    "marathon": "03:48:06"
+  },
+  {
+    "kph": "11.20kph",
+    "mph": "6.96mph",
+    "mpk": "5:22",
+    "mpm": "8:37",
+    "fiveK": "00:26:47",
+    "tenK": "00:53:34",
+    "halfMarathon": "01:53:02",
+    "marathon": "03:46:04"
+  },
+  {
+    "kph": "11.30kph",
+    "mph": "7.02mph",
+    "mpk": "5:19",
+    "mpm": "8:33",
+    "fiveK": "00:26:32",
+    "tenK": "00:53:05",
+    "halfMarathon": "01:52:02",
+    "marathon": "03:44:04"
+  },
+  {
+    "kph": "11.40kph",
+    "mph": "7.08mph",
+    "mpk": "5:16",
+    "mpm": "8:28",
+    "fiveK": "00:26:18",
+    "tenK": "00:52:37",
+    "halfMarathon": "01:51:03",
+    "marathon": "03:42:06"
+  },
+  {
+    "kph": "11.50kph",
+    "mph": "7.15mph",
+    "mpk": "5:13",
+    "mpm": "8:24",
+    "fiveK": "00:26:05",
+    "tenK": "00:52:10",
+    "halfMarathon": "01:50:05",
+    "marathon": "03:40:10"
+  },
+  {
+    "kph": "11.60kph",
+    "mph": "7.21mph",
+    "mpk": "5:10",
+    "mpm": "8:19",
+    "fiveK": "00:25:51",
+    "tenK": "00:51:43",
+    "halfMarathon": "01:49:08",
+    "marathon": "03:38:16"
+  },
+  {
+    "kph": "11.70kph",
+    "mph": "7.27mph",
+    "mpk": "5:08",
+    "mpm": "8:15",
+    "fiveK": "00:25:38",
+    "tenK": "00:51:16",
+    "halfMarathon": "01:48:12",
+    "marathon": "03:36:24"
+  },
+  {
+    "kph": "11.80kph",
+    "mph": "7.33mph",
+    "mpk": "5:05",
+    "mpm": "8:11",
+    "fiveK": "00:25:25",
+    "tenK": "00:50:50",
+    "halfMarathon": "01:47:17",
+    "marathon": "03:34:34"
+  },
+  {
+    "kph": "11.90kph",
+    "mph": "7.39mph",
+    "mpk": "5:02",
+    "mpm": "8:07",
+    "fiveK": "00:25:12",
+    "tenK": "00:50:25",
+    "halfMarathon": "01:46:23",
+    "marathon": "03:32:46"
+  },
+  {
+    "kph": "12.00kph",
+    "mph": "7.46mph",
+    "mpk": "5:00",
+    "mpm": "8:03",
+    "fiveK": "00:25:00",
+    "tenK": "00:50:00",
+    "halfMarathon": "01:45:30",
+    "marathon": "03:31:00"
+  },
+  {
+    "kph": "12.10kph",
+    "mph": "7.52mph",
+    "mpk": "4:58",
+    "mpm": "7:59",
+    "fiveK": "00:24:47",
+    "tenK": "00:49:35",
+    "halfMarathon": "01:44:37",
+    "marathon": "03:29:15"
+  },
+  {
+    "kph": "12.20kph",
+    "mph": "7.58mph",
+    "mpk": "4:55",
+    "mpm": "7:55",
+    "fiveK": "00:24:35",
+    "tenK": "00:49:10",
+    "halfMarathon": "01:43:46",
+    "marathon": "03:27:32"
+  },
+  {
+    "kph": "12.30kph",
+    "mph": "7.64mph",
+    "mpk": "4:53",
+    "mpm": "7:51",
+    "fiveK": "00:24:23",
+    "tenK": "00:48:46",
+    "halfMarathon": "01:42:55",
+    "marathon": "03:25:51"
+  },
+  {
+    "kph": "12.40kph",
+    "mph": "7.71mph",
+    "mpk": "4:50",
+    "mpm": "7:47",
+    "fiveK": "00:24:11",
+    "tenK": "00:48:23",
+    "halfMarathon": "01:42:05",
+    "marathon": "03:24:11"
+  },
+  {
+    "kph": "12.50kph",
+    "mph": "7.77mph",
+    "mpk": "4:48",
+    "mpm": "7:43",
+    "fiveK": "00:24:00",
+    "tenK": "00:48:00",
+    "halfMarathon": "01:41:16",
+    "marathon": "03:22:33"
+  },
+  {
+    "kph": "12.60kph",
+    "mph": "7.83mph",
+    "mpk": "4:46",
+    "mpm": "7:40",
+    "fiveK": "00:23:48",
+    "tenK": "00:47:37",
+    "halfMarathon": "01:40:28",
+    "marathon": "03:20:57"
+  },
+  {
+    "kph": "12.70kph",
+    "mph": "7.89mph",
+    "mpk": "4:43",
+    "mpm": "7:36",
+    "fiveK": "00:23:37",
+    "tenK": "00:47:14",
+    "halfMarathon": "01:39:41",
+    "marathon": "03:19:22"
+  },
+  {
+    "kph": "12.80kph",
+    "mph": "7.95mph",
+    "mpk": "4:41",
+    "mpm": "7:32",
+    "fiveK": "00:23:26",
+    "tenK": "00:46:52",
+    "halfMarathon": "01:38:54",
+    "marathon": "03:17:48"
+  },
+  {
+    "kph": "12.90kph",
+    "mph": "8.02mph",
+    "mpk": "4:39",
+    "mpm": "7:29",
+    "fiveK": "00:23:15",
+    "tenK": "00:46:30",
+    "halfMarathon": "01:38:08",
+    "marathon": "03:16:16"
+  },
+  {
+    "kph": "13.00kph",
+    "mph": "8.08mph",
+    "mpk": "4:37",
+    "mpm": "7:26",
+    "fiveK": "00:23:04",
+    "tenK": "00:46:09",
+    "halfMarathon": "01:37:23",
+    "marathon": "03:14:46"
+  },
+  {
+    "kph": "13.10kph",
+    "mph": "8.14mph",
+    "mpk": "4:35",
+    "mpm": "7:22",
+    "fiveK": "00:22:54",
+    "tenK": "00:45:48",
+    "halfMarathon": "01:36:38",
+    "marathon": "03:13:16"
+  },
+  {
+    "kph": "13.20kph",
+    "mph": "8.20mph",
+    "mpk": "4:33",
+    "mpm": "7:19",
+    "fiveK": "00:22:43",
+    "tenK": "00:45:27",
+    "halfMarathon": "01:35:54",
+    "marathon": "03:11:49"
+  },
+  {
+    "kph": "13.30kph",
+    "mph": "8.26mph",
+    "mpk": "4:31",
+    "mpm": "7:16",
+    "fiveK": "00:22:33",
+    "tenK": "00:45:06",
+    "halfMarathon": "01:35:11",
+    "marathon": "03:10:22"
+  },
+  {
+    "kph": "13.40kph",
+    "mph": "8.33mph",
+    "mpk": "4:29",
+    "mpm": "7:13",
+    "fiveK": "00:22:23",
+    "tenK": "00:44:46",
+    "halfMarathon": "01:34:28",
+    "marathon": "03:08:57"
+  },
+  {
+    "kph": "13.50kph",
+    "mph": "8.39mph",
+    "mpk": "4:26",
+    "mpm": "7:09",
+    "fiveK": "00:22:13",
+    "tenK": "00:44:26",
+    "halfMarathon": "01:33:46",
+    "marathon": "03:07:33"
+  },
+  {
+    "kph": "13.60kph",
+    "mph": "8.45mph",
+    "mpk": "4:25",
+    "mpm": "7:06",
+    "fiveK": "00:22:03",
+    "tenK": "00:44:07",
+    "halfMarathon": "01:33:05",
+    "marathon": "03:06:10"
+  },
+  {
+    "kph": "13.70kph",
+    "mph": "8.51mph",
+    "mpk": "4:23",
+    "mpm": "7:03",
+    "fiveK": "00:21:53",
+    "tenK": "00:43:47",
+    "halfMarathon": "01:32:24",
+    "marathon": "03:04:49"
+  },
+  {
+    "kph": "13.80kph",
+    "mph": "8.57mph",
+    "mpk": "4:21",
+    "mpm": "7:00",
+    "fiveK": "00:21:44",
+    "tenK": "00:43:28",
+    "halfMarathon": "01:31:44",
+    "marathon": "03:03:28"
+  },
+  {
+    "kph": "13.90kph",
+    "mph": "8.64mph",
+    "mpk": "4:19",
+    "mpm": "6:57",
+    "fiveK": "00:21:34",
+    "tenK": "00:43:09",
+    "halfMarathon": "01:31:04",
+    "marathon": "03:02:09"
+  },
+  {
+    "kph": "14.00kph",
+    "mph": "8.70mph",
+    "mpk": "4:17",
+    "mpm": "6:54",
+    "fiveK": "00:21:25",
+    "tenK": "00:42:51",
+    "halfMarathon": "01:30:25",
+    "marathon": "03:00:51"
+  },
+  {
+    "kph": "14.10kph",
+    "mph": "8.76mph",
+    "mpk": "4:16",
+    "mpm": "6:51",
+    "fiveK": "00:21:16",
+    "tenK": "00:42:33",
+    "halfMarathon": "01:29:47",
+    "marathon": "02:59:34"
+  },
+  {
+    "kph": "14.20kph",
+    "mph": "8.82mph",
+    "mpk": "4:14",
+    "mpm": "6:48",
+    "fiveK": "00:21:07",
+    "tenK": "00:42:15",
+    "halfMarathon": "01:29:09",
+    "marathon": "02:58:18"
+  },
+  {
+    "kph": "14.30kph",
+    "mph": "8.89mph",
+    "mpk": "4:12",
+    "mpm": "6:45",
+    "fiveK": "00:20:58",
+    "tenK": "00:41:57",
+    "halfMarathon": "01:28:31",
+    "marathon": "02:57:03"
+  },
+  {
+    "kph": "14.40kph",
+    "mph": "8.95mph",
+    "mpk": "4:10",
+    "mpm": "6:43",
+    "fiveK": "00:20:50",
+    "tenK": "00:41:40",
+    "halfMarathon": "01:27:55",
+    "marathon": "02:55:50"
+  },
+  {
+    "kph": "14.50kph",
+    "mph": "9.01mph",
+    "mpk": "4:08",
+    "mpm": "6:40",
+    "fiveK": "00:20:41",
+    "tenK": "00:41:22",
+    "halfMarathon": "01:27:18",
+    "marathon": "02:54:37"
+  },
+  {
+    "kph": "14.60kph",
+    "mph": "9.07mph",
+    "mpk": "4:07",
+    "mpm": "6:37",
+    "fiveK": "00:20:32",
+    "tenK": "00:41:05",
+    "halfMarathon": "01:26:42",
+    "marathon": "02:53:25"
+  },
+  {
+    "kph": "14.70kph",
+    "mph": "9.13mph",
+    "mpk": "4:05",
+    "mpm": "6:34",
+    "fiveK": "00:20:24",
+    "tenK": "00:40:48",
+    "halfMarathon": "01:26:07",
+    "marathon": "02:52:14"
+  },
+  {
+    "kph": "14.80kph",
+    "mph": "9.20mph",
+    "mpk": "4:03",
+    "mpm": "6:31",
+    "fiveK": "00:20:16",
+    "tenK": "00:40:32",
+    "halfMarathon": "01:25:32",
+    "marathon": "02:51:04"
+  },
+  {
+    "kph": "14.90kph",
+    "mph": "9.26mph",
+    "mpk": "4:02",
+    "mpm": "6:29",
+    "fiveK": "00:20:08",
+    "tenK": "00:40:16",
+    "halfMarathon": "01:24:57",
+    "marathon": "02:49:55"
+  },
+  {
+    "kph": "15.00kph",
+    "mph": "9.32mph",
+    "mpk": "4:00",
+    "mpm": "6:26",
+    "fiveK": "00:20:00",
+    "tenK": "00:40:00",
+    "halfMarathon": "01:24:24",
+    "marathon": "02:48:48"
+  },
+  {
+    "kph": "15.10kph",
+    "mph": "9.38mph",
+    "mpk": "3:58",
+    "mpm": "6:23",
+    "fiveK": "00:19:52",
+    "tenK": "00:39:44",
+    "halfMarathon": "01:23:50",
+    "marathon": "02:47:40"
+  },
+  {
+    "kph": "15.20kph",
+    "mph": "9.44mph",
+    "mpk": "3:57",
+    "mpm": "6:21",
+    "fiveK": "00:19:44",
+    "tenK": "00:39:28",
+    "halfMarathon": "01:23:17",
+    "marathon": "02:46:34"
+  },
+  {
+    "kph": "15.30kph",
+    "mph": "9.51mph",
+    "mpk": "3:55",
+    "mpm": "6:19",
+    "fiveK": "00:19:36",
+    "tenK": "00:39:12",
+    "halfMarathon": "01:22:44",
+    "marathon": "02:45:29"
+  },
+  {
+    "kph": "15.40kph",
+    "mph": "9.57mph",
+    "mpk": "3:54",
+    "mpm": "6:16",
+    "fiveK": "00:19:28",
+    "tenK": "00:38:57",
+    "halfMarathon": "01:22:12",
+    "marathon": "02:44:24"
+  },
+  {
+    "kph": "15.50kph",
+    "mph": "9.63mph",
+    "mpk": "3:52",
+    "mpm": "6:14",
+    "fiveK": "00:19:21",
+    "tenK": "00:38:42",
+    "halfMarathon": "01:21:40",
+    "marathon": "02:43:21"
+  },
+  {
+    "kph": "15.60kph",
+    "mph": "9.69mph",
+    "mpk": "3:51",
+    "mpm": "6:11",
+    "fiveK": "00:19:13",
+    "tenK": "00:38:27",
+    "halfMarathon": "01:21:09",
+    "marathon": "02:42:18"
+  },
+  {
+    "kph": "15.70kph",
+    "mph": "9.76mph",
+    "mpk": "3:49",
+    "mpm": "6:09",
+    "fiveK": "00:19:06",
+    "tenK": "00:38:12",
+    "halfMarathon": "01:20:38",
+    "marathon": "02:41:16"
+  },
+  {
+    "kph": "15.80kph",
+    "mph": "9.82mph",
+    "mpk": "3:48",
+    "mpm": "6:07",
+    "fiveK": "00:18:59",
+    "tenK": "00:37:58",
+    "halfMarathon": "01:20:07",
+    "marathon": "02:40:15"
+  },
+  {
+    "kph": "15.90kph",
+    "mph": "9.88mph",
+    "mpk": "3:46",
+    "mpm": "6:04",
+    "fiveK": "00:18:52",
+    "tenK": "00:37:44",
+    "halfMarathon": "01:19:37",
+    "marathon": "02:39:14"
+  },
+  {
+    "kph": "16.00kph",
+    "mph": "9.94mph",
+    "mpk": "3:45",
+    "mpm": "6:02",
+    "fiveK": "00:18:45",
+    "tenK": "00:37:30",
+    "halfMarathon": "01:19:07",
+    "marathon": "02:38:15"
+  },
+  {
+    "kph": "16.10kph",
+    "mph": "10.00mph",
+    "mpk": "3:44",
+    "mpm": "6:00",
+    "fiveK": "00:18:38",
+    "tenK": "00:37:16",
+    "halfMarathon": "01:18:38",
+    "marathon": "02:37:16"
+  },
+  {
+    "kph": "16.20kph",
+    "mph": "10.07mph",
+    "mpk": "3:42",
+    "mpm": "5:58",
+    "fiveK": "00:18:31",
+    "tenK": "00:37:02",
+    "halfMarathon": "01:18:08",
+    "marathon": "02:36:17"
+  },
+  {
+    "kph": "16.30kph",
+    "mph": "10.13mph",
+    "mpk": "3:41",
+    "mpm": "5:55",
+    "fiveK": "00:18:24",
+    "tenK": "00:36:48",
+    "halfMarathon": "01:17:40",
+    "marathon": "02:35:20"
+  },
+  {
+    "kph": "16.40kph",
+    "mph": "10.19mph",
+    "mpk": "3:40",
+    "mpm": "5:53",
+    "fiveK": "00:18:17",
+    "tenK": "00:36:35",
+    "halfMarathon": "01:17:11",
+    "marathon": "02:34:23"
+  },
+  {
+    "kph": "16.50kph",
+    "mph": "10.25mph",
+    "mpk": "3:38",
+    "mpm": "5:51",
+    "fiveK": "00:18:10",
+    "tenK": "00:36:21",
+    "halfMarathon": "01:16:43",
+    "marathon": "02:33:27"
+  },
+  {
+    "kph": "16.60kph",
+    "mph": "10.31mph",
+    "mpk": "3:37",
+    "mpm": "5:49",
+    "fiveK": "00:18:04",
+    "tenK": "00:36:08",
+    "halfMarathon": "01:16:15",
+    "marathon": "02:32:31"
+  },
+  {
+    "kph": "16.70kph",
+    "mph": "10.38mph",
+    "mpk": "3:35",
+    "mpm": "5:47",
+    "fiveK": "00:17:57",
+    "tenK": "00:35:55",
+    "halfMarathon": "01:15:48",
+    "marathon": "02:31:37"
+  },
+  {
+    "kph": "16.80kph",
+    "mph": "10.44mph",
+    "mpk": "3:34",
+    "mpm": "5:45",
+    "fiveK": "00:17:51",
+    "tenK": "00:35:42",
+    "halfMarathon": "01:15:21",
+    "marathon": "02:30:42"
+  },
+  {
+    "kph": "16.90kph",
+    "mph": "10.50mph",
+    "mpk": "3:33",
+    "mpm": "5:43",
+    "fiveK": "00:17:45",
+    "tenK": "00:35:30",
+    "halfMarathon": "01:14:54",
+    "marathon": "02:29:49"
+  },
+  {
+    "kph": "17.00kph",
+    "mph": "10.56mph",
+    "mpk": "3:32",
+    "mpm": "5:41",
+    "fiveK": "00:17:38",
+    "tenK": "00:35:17",
+    "halfMarathon": "01:14:28",
+    "marathon": "02:28:56"
+  },
+  {
+    "kph": "17.10kph",
+    "mph": "10.63mph",
+    "mpk": "3:31",
+    "mpm": "5:39",
+    "fiveK": "00:17:32",
+    "tenK": "00:35:05",
+    "halfMarathon": "01:14:02",
+    "marathon": "02:28:04"
+  },
+  {
+    "kph": "17.20kph",
+    "mph": "10.69mph",
+    "mpk": "3:29",
+    "mpm": "5:37",
+    "fiveK": "00:17:26",
+    "tenK": "00:34:53",
+    "halfMarathon": "01:13:36",
+    "marathon": "02:27:12"
+  },
+  {
+    "kph": "17.30kph",
+    "mph": "10.75mph",
+    "mpk": "3:28",
+    "mpm": "5:35",
+    "fiveK": "00:17:20",
+    "tenK": "00:34:40",
+    "halfMarathon": "01:13:10",
+    "marathon": "02:26:21"
+  },
+  {
+    "kph": "17.40kph",
+    "mph": "10.81mph",
+    "mpk": "3:27",
+    "mpm": "5:33",
+    "fiveK": "00:17:14",
+    "tenK": "00:34:28",
+    "halfMarathon": "01:12:45",
+    "marathon": "02:25:31"
+  },
+  {
+    "kph": "17.50kph",
+    "mph": "10.87mph",
+    "mpk": "3:26",
+    "mpm": "5:31",
+    "fiveK": "00:17:08",
+    "tenK": "00:34:17",
+    "halfMarathon": "01:12:20",
+    "marathon": "02:24:41"
+  },
+  {
+    "kph": "17.60kph",
+    "mph": "10.94mph",
+    "mpk": "3:25",
+    "mpm": "5:29",
+    "fiveK": "00:17:02",
+    "tenK": "00:34:05",
+    "halfMarathon": "01:11:55",
+    "marathon": "02:23:51"
+  },
+  {
+    "kph": "17.70kph",
+    "mph": "11.00mph",
+    "mpk": "3:23",
+    "mpm": "5:28",
+    "fiveK": "00:16:56",
+    "tenK": "00:33:53",
+    "halfMarathon": "01:11:31",
+    "marathon": "02:23:03"
+  },
+  {
+    "kph": "17.80kph",
+    "mph": "11.06mph",
+    "mpk": "3:22",
+    "mpm": "5:25",
+    "fiveK": "00:16:51",
+    "tenK": "00:33:42",
+    "halfMarathon": "01:11:07",
+    "marathon": "02:22:14"
+  },
+  {
+    "kph": "17.90kph",
+    "mph": "11.12mph",
+    "mpk": "3:21",
+    "mpm": "5:23",
+    "fiveK": "00:16:45",
+    "tenK": "00:33:31",
+    "halfMarathon": "01:10:43",
+    "marathon": "02:21:27"
+  },
+  {
+    "kph": "18.00kph",
+    "mph": "11.18mph",
+    "mpk": "3:20",
+    "mpm": "5:22",
+    "fiveK": "00:16:40",
+    "tenK": "00:33:20",
+    "halfMarathon": "01:10:20",
+    "marathon": "02:20:40"
+  },
+  {
+    "kph": "18.10kph",
+    "mph": "11.25mph",
+    "mpk": "3:19",
+    "mpm": "5:20",
+    "fiveK": "00:16:34",
+    "tenK": "00:33:08",
+    "halfMarathon": "01:09:56",
+    "marathon": "02:19:53"
+  },
+  {
+    "kph": "18.20kph",
+    "mph": "11.31mph",
+    "mpk": "3:18",
+    "mpm": "5:19",
+    "fiveK": "00:16:29",
+    "tenK": "00:32:58",
+    "halfMarathon": "01:09:33",
+    "marathon": "02:19:07"
+  },
+  {
+    "kph": "18.30kph",
+    "mph": "11.37mph",
+    "mpk": "3:17",
+    "mpm": "5:17",
+    "fiveK": "00:16:23",
+    "tenK": "00:32:47",
+    "halfMarathon": "01:09:10",
+    "marathon": "02:18:21"
+  },
+  {
+    "kph": "18.40kph",
+    "mph": "11.43mph",
+    "mpk": "3:16",
+    "mpm": "5:15",
+    "fiveK": "00:16:18",
+    "tenK": "00:32:36",
+    "halfMarathon": "01:08:48",
+    "marathon": "02:17:36"
+  },
+  {
+    "kph": "18.50kph",
+    "mph": "11.50mph",
+    "mpk": "3:14",
+    "mpm": "5:13",
+    "fiveK": "00:16:12",
+    "tenK": "00:32:25",
+    "halfMarathon": "01:08:25",
+    "marathon": "02:16:51"
+  },
+  {
+    "kph": "18.60kph",
+    "mph": "11.56mph",
+    "mpk": "3:14",
+    "mpm": "5:11",
+    "fiveK": "00:16:07",
+    "tenK": "00:32:15",
+    "halfMarathon": "01:08:03",
+    "marathon": "02:16:07"
+  },
+  {
+    "kph": "18.70kph",
+    "mph": "11.62mph",
+    "mpk": "3:13",
+    "mpm": "5:10",
+    "fiveK": "00:16:02",
+    "tenK": "00:32:05",
+    "halfMarathon": "01:07:42",
+    "marathon": "02:15:24"
+  },
+  {
+    "kph": "18.80kph",
+    "mph": "11.68mph",
+    "mpk": "3:11",
+    "mpm": "5:08",
+    "fiveK": "00:15:57",
+    "tenK": "00:31:54",
+    "halfMarathon": "01:07:20",
+    "marathon": "02:14:40"
+  },
+  {
+    "kph": "18.90kph",
+    "mph": "11.74mph",
+    "mpk": "3:10",
+    "mpm": "5:07",
+    "fiveK": "00:15:52",
+    "tenK": "00:31:44",
+    "halfMarathon": "01:06:59",
+    "marathon": "02:13:58"
+  },
+  {
+    "kph": "19.00kph",
+    "mph": "11.81mph",
+    "mpk": "3:10",
+    "mpm": "5:05",
+    "fiveK": "00:15:47",
+    "tenK": "00:31:34",
+    "halfMarathon": "01:06:37",
+    "marathon": "02:13:15"
+  },
+  {
+    "kph": "19.10kph",
+    "mph": "11.87mph",
+    "mpk": "3:08",
+    "mpm": "5:04",
+    "fiveK": "00:15:42",
+    "tenK": "00:31:24",
+    "halfMarathon": "01:06:16",
+    "marathon": "02:12:33"
+  },
+  {
+    "kph": "19.20kph",
+    "mph": "11.93mph",
+    "mpk": "3:08",
+    "mpm": "5:02",
+    "fiveK": "00:15:37",
+    "tenK": "00:31:14",
+    "halfMarathon": "01:05:56",
+    "marathon": "02:11:52"
+  },
+  {
+    "kph": "19.30kph",
+    "mph": "11.99mph",
+    "mpk": "3:07",
+    "mpm": "5:00",
+    "fiveK": "00:15:32",
+    "tenK": "00:31:05",
+    "halfMarathon": "01:05:35",
+    "marathon": "02:11:11"
+  },
+  {
+    "kph": "19.40kph",
+    "mph": "12.05mph",
+    "mpk": "3:05",
+    "mpm": "4:59",
+    "fiveK": "00:15:27",
+    "tenK": "00:30:55",
+    "halfMarathon": "01:05:15",
+    "marathon": "02:10:30"
+  },
+  {
+    "kph": "19.50kph",
+    "mph": "12.12mph",
+    "mpk": "3:05",
+    "mpm": "4:57",
+    "fiveK": "00:15:23",
+    "tenK": "00:30:46",
+    "halfMarathon": "01:04:55",
+    "marathon": "02:09:50"
+  },
+  {
+    "kph": "19.60kph",
+    "mph": "12.18mph",
+    "mpk": "3:04",
+    "mpm": "4:56",
+    "fiveK": "00:15:18",
+    "tenK": "00:30:36",
+    "halfMarathon": "01:04:35",
+    "marathon": "02:09:11"
+  },
+  {
+    "kph": "19.70kph",
+    "mph": "12.24mph",
+    "mpk": "3:03",
+    "mpm": "4:54",
+    "fiveK": "00:15:13",
+    "tenK": "00:30:27",
+    "halfMarathon": "01:04:15",
+    "marathon": "02:08:31"
+  },
+  {
+    "kph": "19.80kph",
+    "mph": "12.30mph",
+    "mpk": "3:02",
+    "mpm": "4:53",
+    "fiveK": "00:15:09",
+    "tenK": "00:30:18",
+    "halfMarathon": "01:03:56",
+    "marathon": "02:07:52"
+  },
+  {
+    "kph": "19.90kph",
+    "mph": "12.37mph",
+    "mpk": "3:01",
+    "mpm": "4:51",
+    "fiveK": "00:15:04",
+    "tenK": "00:30:09",
+    "halfMarathon": "01:03:37",
+    "marathon": "02:07:14"
+  },
+  {
+    "kph": "20.00kph",
+    "mph": "12.43mph",
+    "mpk": "3:00",
+    "mpm": "4:50",
+    "fiveK": "00:14:59",
+    "tenK": "00:29:59",
+    "halfMarathon": "01:03:17",
+    "marathon": "02:06:35"
+  },
+  {
+    "kph": "20.10kph",
+    "mph": "12.49mph",
+    "mpk": "2:59",
+    "mpm": "4:48",
+    "fiveK": "00:14:55",
+    "tenK": "00:29:51",
+    "halfMarathon": "01:02:59",
+    "marathon": "02:05:58"
+  },
+  {
+    "kph": "20.20kph",
+    "mph": "12.55mph",
+    "mpk": "2:58",
+    "mpm": "4:47",
+    "fiveK": "00:14:51",
+    "tenK": "00:29:42",
+    "halfMarathon": "01:02:40",
+    "marathon": "02:05:20"
+  },
+  {
+    "kph": "20.30kph",
+    "mph": "12.61mph",
+    "mpk": "2:58",
+    "mpm": "4:46",
+    "fiveK": "00:14:46",
+    "tenK": "00:29:33",
+    "halfMarathon": "01:02:21",
+    "marathon": "02:04:43"
+  },
+  {
+    "kph": "20.40kph",
+    "mph": "12.68mph",
+    "mpk": "2:56",
+    "mpm": "4:44",
+    "fiveK": "00:14:42",
+    "tenK": "00:29:24",
+    "halfMarathon": "01:02:03",
+    "marathon": "02:04:07"
+  },
+  {
+    "kph": "20.50kph",
+    "mph": "12.74mph",
+    "mpk": "2:56",
+    "mpm": "4:43",
+    "fiveK": "00:14:38",
+    "tenK": "00:29:16",
+    "halfMarathon": "01:01:45",
+    "marathon": "02:03:30"
+  },
+  {
+    "kph": "20.60kph",
+    "mph": "12.80mph",
+    "mpk": "2:55",
+    "mpm": "4:41",
+    "fiveK": "00:14:33",
+    "tenK": "00:29:07",
+    "halfMarathon": "01:01:27",
+    "marathon": "02:02:54"
+  },
+  {
+    "kph": "20.70kph",
+    "mph": "12.86mph",
+    "mpk": "2:54",
+    "mpm": "4:40",
+    "fiveK": "00:14:29",
+    "tenK": "00:28:59",
+    "halfMarathon": "01:01:09",
+    "marathon": "02:02:19"
+  },
+  {
+    "kph": "20.80kph",
+    "mph": "12.92mph",
+    "mpk": "2:53",
+    "mpm": "4:38",
+    "fiveK": "00:14:25",
+    "tenK": "00:28:50",
+    "halfMarathon": "01:00:51",
+    "marathon": "02:01:43"
+  },
+  {
+    "kph": "20.90kph",
+    "mph": "12.99mph",
+    "mpk": "2:52",
+    "mpm": "4:37",
+    "fiveK": "00:14:21",
+    "tenK": "00:28:42",
+    "halfMarathon": "01:00:34",
+    "marathon": "02:01:08"
+  },
+  {
+    "kph": "21.00kph",
+    "mph": "13.05mph",
+    "mpk": "2:52",
+    "mpm": "4:36",
+    "fiveK": "00:14:17",
+    "tenK": "00:28:34",
+    "halfMarathon": "01:00:17",
+    "marathon": "02:00:34"
+  }
+]

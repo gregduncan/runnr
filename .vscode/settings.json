@@ -1,0 +1,18 @@
+{
+    "files.exclude": {
+        ".env": true,
+        ".babelrc": true,
+        ".vscode": true,
+        "**/.DS_Store": true,
+        "**/.git": true,
+        "**/.hg": true,
+        "**/.svn": true,
+        "**/CVS": true,
+        "**/node_modules": true,
+        ".gitignore": true,
+        "babel.config.js": true,
+        "jest.config.js": true,
+        "yarn.lock": true,
+        // "dist": true
+    }
+}

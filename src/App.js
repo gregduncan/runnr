@@ -1,24 +1,41 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+
+import data from './store/data.json';
 
 function App() {
+
+  const rows = data.map(({ unit, speed, mins, fiveK, tenK, tenMile, half, full }) => <tr>
+    <td>{unit}</td>
+    <td>{speed}</td>
+    <td>{mins}</td>
+    <td>{fiveK}</td>
+    <td>{tenK}</td>
+    <td>{tenMile}</td>
+    <td>{half}</td>
+    <td>{full}</td> 
+  </tr>);
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Runner</h1>
+      <table>
+        <thead>
+          <tr>
+            <th>Unit</th>
+            <th>Speed</th>
+            <th>Min</th>
+            <th>5K</th>
+            <th>10K</th>
+            <th>10mile</th>
+            <th>Half</th>
+            <th>Full</th>
+          </tr>
+        </thead>
+        <tbody>
+          {rows}
+        </tbody>
+      </table>
     </div>
   );
 }
