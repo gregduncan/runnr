@@ -7,7 +7,7 @@ export const Container = styled.div`
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 
   span {
-    min-width: 100px;
+    min-width: 85px;
     background-color: #212529;
     color: white;
     border-bottom: 1px solid #464c52;

@@ -6,7 +6,7 @@ export const Container = styled.div`
   cursor: pointer;
 
   span {
-    min-width: 100px;
+    min-width: 85px;
     background-color: ${props => (props.highlight ? '#b8daff' : 'white')};
   }
 `;
