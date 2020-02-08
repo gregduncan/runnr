@@ -1,81 +1,123 @@
-import React from 'react';
-import { BrowserRouter as Router, Link, useLocation } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { BrowserRouter as Router, Link } from 'react-router-dom';
 
-import { Button, Cell, Header, Row, Table, Toggle } from './components';
-import { mph, kph } from './store'
+import { Button, Cell, Header, List, Row, Table, Toggle } from './components';
+import { useDistanceCalc, useQuery } from './hooks';
+import { mph, kph } from './store';
 
-function useQuery() {
-  return new URLSearchParams(useLocation().search);
-}
+const Items = ({ items, func }) => {
+  return items.map((item, index) => (
+    <div key={index} className="list-group-item hover" onClick={() => func(item.id)}>
+      {item.mins}
+    </div>
+  ));
+};
+
+const Count = ({ items, isMiles }) => {
+  let total = 0;
+  return (
+    <div className="list-group-item">
+      {items.length}
+      {isMiles ? 'm' : 'km'} in {total}
+    </div>
+  );
+};
 
 const Home = () => {
   let query = useQuery();
   const unit = query.get('unit') || 'miles';
   const data = unit === 'miles' ? mph : kph;
-  const isMiles = unit === 'miles'
+  const isMiles = unit === 'miles';
   const distance = query.get('distance');
   let distArr = distance ? distance.split('|') : [];
 
-  const rows = data.map(({ speed, mins, fiveK, tenK, tenMile, half, full }, index) => (
-    <Row key={mins}>
-      <Cell text={speed} />
-      <Cell text={mins} />
-      <Cell url={distArr} distance={'5k'} text={fiveK} />
-      <Cell url={distArr} distance={'10k'} text={tenK} />
-      <Toggle visible={isMiles}>
-        <Cell url={distArr} distance={'10mile'} text={tenMile} />
-      </Toggle>
-      <Cell url={distArr} distance={'half'} text={half} />
-      <Cell url={distArr} distance={'full'} text={full} />
-    </Row>
-  ));
+  const [mphArr, setMph] = useState([]);
 
-  const onDistanceChange = value => {
-    if (distArr.length === 0 || !distArr.includes(value)) {
-      distArr.push(value);
-    } else {
-      distArr = distArr.filter(item => item !== value);
-    }
-    var searchParams = new URLSearchParams(window.location.search);
-    if (distArr.length > 0) {
-      searchParams.set('distance', distArr.join('|'));
-    } else {
-      searchParams.delete('distance');
-    }
-
-    window.location.search = searchParams.toString();
-  };
+  useEffect(() => {
+    setMph([]);
+  }, [unit])
 
   return (
-    <div className="App container container-fluid">
+    <div className="App container-fluid">
       <h1>Running Pace Tables</h1>
 
-      <Link className={`btn btn-primary ${unit !== 'kilometers' ? 'btn-success' : ''}`} style={{ marginRight: '20px', marginBottom: '20px' }} to="/?unit=miles">Miles</Link>
-      <Link className={`btn btn-primary ${unit === 'kilometers' ? 'btn-success' : ''}`} style={{ marginRight: '20px', marginBottom: '20px' }} to="/?unit=kilometers">Kilometers</Link>
-      <Button onClick={onDistanceChange} url={distArr} distance={'5k'}>5k</Button>
-      <Button onClick={onDistanceChange} url={distArr} distance={'10k'}>10k</Button>
+      <Link className={`btn btn-primary ${unit !== 'kilometers' ? 'btn-success' : ''}`} style={{ marginRight: '20px', marginBottom: '20px' }} to="/?unit=miles">
+        Miles
+      </Link>
+      <Link className={`btn btn-primary ${unit === 'kilometers' ? 'btn-success' : ''}`} style={{ marginRight: '20px', marginBottom: '20px' }} to="/?unit=kilometers">
+        Kilometers
+      </Link>
+      <Button onClick={useDistanceCalc} url={distArr} distance={'5k'}>
+        5k
+      </Button>
+      <Button onClick={useDistanceCalc} url={distArr} distance={'10k'}>
+        10k
+      </Button>
       <Toggle visible={isMiles}>
-        <Button onClick={onDistanceChange} url={distArr} distance={'10mile'}>
+        <Button onClick={useDistanceCalc} url={distArr} distance={'10mile'}>
           10 mile
         </Button>
       </Toggle>
-      <Button onClick={onDistanceChange} url={distArr} distance={'half'}>Half</Button>
-      <Button onClick={onDistanceChange} url={distArr} distance={'full'}>Marathon</Button>
-
-      <Table>
-        <Header>
-          <Cell text={`Speed ${isMiles ? 'mph' : 'kph'}`} />
-          <Cell text={'Min'} />
-          <Cell url={distArr} distance={'5k'} text={'5k'} />
-          <Cell url={distArr} distance={'10k'} text={'10k'} />
-          <Toggle visible={isMiles}>
-            <Cell url={distArr} distance={'10mile'} text={'10 mile'} />
-          </Toggle>
-          <Cell url={distArr} distance={'half'} text={'Half'} />
-          <Cell url={distArr} distance={'full'} text={'Full'} />
-        </Header>
-        {rows}
-      </Table>
+      <Button onClick={useDistanceCalc} url={distArr} distance={'half'}>
+        Half
+      </Button>
+      <Button onClick={useDistanceCalc} url={distArr} distance={'full'}>
+        Marathon
+      </Button>
+      <div className="row">
+        <div className="col-md-10">
+          <Table>
+            <Header>
+              <Cell text={`Speed ${isMiles ? 'mph' : 'kph'}`} />
+              <Cell text={'Min'} />
+              <Cell url={distArr} distance={'5k'} text={'5k'} />
+              <Cell url={distArr} distance={'10k'} text={'10k'} />
+              <Toggle visible={isMiles}>
+                <Cell url={distArr} distance={'10mile'} text={'10 mile'} />
+              </Toggle>
+              <Cell url={distArr} distance={'half'} text={'Half'} />
+              <Cell url={distArr} distance={'full'} text={'Full'} />
+              <Cell text={''} />
+            </Header>
+            {data.map(({ speed, mins, fiveK, tenK, tenMile, half, full }, index) => {
+              return (
+                <Row key={mins}>
+                  <Cell text={speed} />
+                  <Cell text={mins} />
+                  <Cell url={distArr} distance={'5k'} text={fiveK} />
+                  <Cell url={distArr} distance={'10k'} text={tenK} />
+                  <Toggle visible={isMiles}>
+                    <Cell url={distArr} distance={'10mile'} text={tenMile} />
+                  </Toggle>
+                  <Cell url={distArr} distance={'half'} text={half} />
+                  <Cell url={distArr} distance={'full'} text={full} />
+                  <Cell>
+                    <button
+                      className="btn btn-primary"
+                      onClick={() => {
+                        setMph([...mphArr, { mins: mins, id: Date.now() }]);
+                      }}
+                    >
+                      +
+                    </button>
+                  </Cell>
+                </Row>
+              );
+            })}
+          </Table>
+        </div>
+        <div className="col-md-2">
+          <List>
+            <Items
+              items={mphArr}
+              func={id => {
+                setMph(mphArr.filter(item => item.id !== id));
+              }}
+            />
+            <Count items={mphArr} isMiles={isMiles} />
+          </List>
+        </div>
+      </div>
     </div>
   );
 };

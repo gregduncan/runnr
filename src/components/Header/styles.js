@@ -4,7 +4,7 @@ export const Container = styled.div`
   position: sticky;
   top: 0;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 
   span {
     min-width: 85px;
