@@ -99,7 +99,7 @@ const Home = () => {
         <Container>
           <List className='list-group'>
           <Toggle visible={timeArr.length > 0}>
-              <ListItem className='list-group-item'>Time calculator</ListItem>
+              <ListItem className='list-group-item' onClick={() => setTime([])} >Time calculator</ListItem>
             </Toggle>
             {timeArr.map((item, index) => {
               return (
