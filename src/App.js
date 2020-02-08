@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Link } from 'react-router-dom';
 
-import { Button, Cell, Count, Header, List, Row, Table, Toggle } from './components';
+import { Button, Cell, Count, Header, Row, Table, Toggle } from './components';
 import { useDistanceCalc, useQuery, useUnits } from './hooks';
 import { mph, kph } from './store';
-import { Fluid, FlexBox, Container, Heading } from './Styles';
+import { List, ListItem, FakeCell, FakeHeader, Fluid, FlexBox, Container, Heading } from './Styles';
 
 const Home = () => {
   let query = useQuery();
@@ -74,38 +74,43 @@ const Home = () => {
           </Table>
         </Container>
         <Container>
-        <Table>
-            <Header>
-              <Cell text={'bo'} />
-            </Header>
+          <Table>
+
+            <FakeHeader />
+
             {data.map(({ mins }, index) => {
               return (
                 <Row key={`${mins}${index}-button`}>
-                  <Cell>
+                  <FakeCell>
                     <button
-                      className="btn btn-primary"
+                      className="btn btn-primary btn-sm"
                       onClick={() => {
                         setTime([...timeArr, { mins: mins, id: Date.now() }]);
                       }}
                     >
                       +
                     </button>
-                  </Cell>
+                  </FakeCell>
                 </Row>
               );
             })}
           </Table>
         </Container>
         <Container>
-          <List>
+          <List className='list-group'>
+          <Toggle visible={timeArr.length > 0}>
+              <ListItem className='list-group-item'>Time calculator</ListItem>
+            </Toggle>
             {timeArr.map((item, index) => {
               return (
-                <div key={index} onClick={() => setTime(timeArr.filter(i => item.id !== i.id))}>
+                <ListItem className='list-group-item' key={index} onClick={() => setTime(timeArr.filter(i => item.id !== i.id))}>
                   {item.mins}
-                </div>
+                </ListItem>
               );
             })}
-            <Count items={timeArr} isMiles={isMiles} />
+            <Toggle visible={timeArr.length > 0}>
+              <Count items={timeArr} isMiles={isMiles} />
+            </Toggle>
           </List>
         </Container>
       </FlexBox>

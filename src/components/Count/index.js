@@ -1,6 +1,7 @@
 import React from 'react';
 import moment from 'moment';
 
+import { ListItem } from '../../Styles';
 
 export const Count = ({ items, isMiles }) => {
   const date = moment("1981-12-04");
@@ -15,9 +16,9 @@ export const Count = ({ items, isMiles }) => {
     date.add(seconds, 's')
  }
   return (
-    <div>
+    <ListItem className="list-group-item list-group-item-primary">
       {items.length}
       {isMiles ? 'm' : 'km'} in {`${date.hours() > 0 ? date.format('HH:mm:ss') : date.format('mm:ss') }`}
-    </div>
+    </ListItem>
   );
 }
