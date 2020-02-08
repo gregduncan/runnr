@@ -1,4 +1,5 @@
 import { useDistanceCalc } from './useDistanceCalc';
 import { useQuery } from './useQuery';
+import { useUnits } from './useUnits';
 
-export { useDistanceCalc, useQuery };
+export { useDistanceCalc, useQuery, useUnits };

@@ -1,46 +1,24 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Link } from 'react-router-dom';
 
-import { Button, Cell, Header, List, Row, Table, Toggle } from './components';
-import { useDistanceCalc, useQuery } from './hooks';
+import { Button, Cell, Count, Header, List, Row, Table, Toggle } from './components';
+import { useDistanceCalc, useQuery, useUnits } from './hooks';
 import { mph, kph } from './store';
-
-const Items = ({ items, func }) => {
-  return items.map((item, index) => (
-    <div key={index} className="list-group-item hover" onClick={() => func(item.id)}>
-      {item.mins}
-    </div>
-  ));
-};
-
-const Count = ({ items, isMiles }) => {
-  let total = 0;
-  return (
-    <div className="list-group-item">
-      {items.length}
-      {isMiles ? 'm' : 'km'} in {total}
-    </div>
-  );
-};
+import { Fluid, FlexBox, Container, Heading } from './Styles';
 
 const Home = () => {
   let query = useQuery();
-  const unit = query.get('unit') || 'miles';
-  const data = unit === 'miles' ? mph : kph;
-  const isMiles = unit === 'miles';
-  const distance = query.get('distance');
-  let distArr = distance ? distance.split('|') : [];
-
-  const [mphArr, setMph] = useState([]);
+  let { unit, isMiles, distArr } = useUnits(query)
+  const data = isMiles ? mph : kph;
+  const [timeArr, setTime] = useState([]);
 
   useEffect(() => {
-    setMph([]);
+    setTime([]);
   }, [unit])
 
   return (
-    <div className="App container-fluid">
-      <h1>Running Pace Tables</h1>
-
+    <Fluid>
+      <Heading>Running Pace Tables</Heading>
       <Link className={`btn btn-primary ${unit !== 'kilometers' ? 'btn-success' : ''}`} style={{ marginRight: '20px', marginBottom: '20px' }} to="/?unit=miles">
         Miles
       </Link>
@@ -64,8 +42,8 @@ const Home = () => {
       <Button onClick={useDistanceCalc} url={distArr} distance={'full'}>
         Marathon
       </Button>
-      <div className="row">
-        <div className="col-md-10">
+      <FlexBox>
+        <Container>
           <Table>
             <Header>
               <Cell text={`Speed ${isMiles ? 'mph' : 'kph'}`} />
@@ -77,11 +55,10 @@ const Home = () => {
               </Toggle>
               <Cell url={distArr} distance={'half'} text={'Half'} />
               <Cell url={distArr} distance={'full'} text={'Full'} />
-              <Cell text={''} />
             </Header>
             {data.map(({ speed, mins, fiveK, tenK, tenMile, half, full }, index) => {
               return (
-                <Row key={mins}>
+                <Row key={`${mins}${index}`}>
                   <Cell text={speed} />
                   <Cell text={mins} />
                   <Cell url={distArr} distance={'5k'} text={fiveK} />
@@ -91,11 +68,24 @@ const Home = () => {
                   </Toggle>
                   <Cell url={distArr} distance={'half'} text={half} />
                   <Cell url={distArr} distance={'full'} text={full} />
+                </Row>
+              );
+            })}
+          </Table>
+        </Container>
+        <Container>
+        <Table>
+            <Header>
+              <Cell text={'bo'} />
+            </Header>
+            {data.map(({ mins }, index) => {
+              return (
+                <Row key={`${mins}${index}-button`}>
                   <Cell>
                     <button
                       className="btn btn-primary"
                       onClick={() => {
-                        setMph([...mphArr, { mins: mins, id: Date.now() }]);
+                        setTime([...timeArr, { mins: mins, id: Date.now() }]);
                       }}
                     >
                       +
@@ -105,20 +95,21 @@ const Home = () => {
               );
             })}
           </Table>
-        </div>
-        <div className="col-md-2">
+        </Container>
+        <Container>
           <List>
-            <Items
-              items={mphArr}
-              func={id => {
-                setMph(mphArr.filter(item => item.id !== id));
-              }}
-            />
-            <Count items={mphArr} isMiles={isMiles} />
+            {timeArr.map((item, index) => {
+              return (
+                <div key={index} onClick={() => setTime(timeArr.filter(i => item.id !== i.id))}>
+                  {item.mins}
+                </div>
+              );
+            })}
+            <Count items={timeArr} isMiles={isMiles} />
           </List>
-        </div>
-      </div>
-    </div>
+        </Container>
+      </FlexBox>
+    </Fluid>
   );
 };
 
