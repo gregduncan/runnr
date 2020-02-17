@@ -104,7 +104,7 @@ const Home = () => {
             {timeArr.map((item, index) => {
               return (
                 <ListItem className='list-group-item' key={index} onClick={() => setTime(timeArr.filter(i => item.id !== i.id))}>
-                  {item.mins}
+                  {item.mins} - {isMiles ? 'mile' : 'km'} {`${(index + 1)}`}
                 </ListItem>
               );
             })}
