@@ -1,14 +1,12 @@
 import React from 'react';
 
-import { Span } from './styles';
-
 export const Cell = ({ children, distance, url, text }) => {
-  if (children) {
-    return <Span>{children}</Span>;
-  } else {
-    if (url && url.length > 0 && !url.includes(distance)) {
-      return null;
+    if (children) {
+        return <span>{children}</span>;
+    } else {
+        if (url && url.length > 0 && !url.includes(distance)) {
+            return null;
+        }
+        return <span>{text}</span>;
     }
-    return <Span>{text}</Span>;
-  }
 };

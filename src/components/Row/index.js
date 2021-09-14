@@ -1,13 +1,11 @@
 import React, { useState } from 'react';
 
-import { Container } from './styles';
-
 export const Row = ({ children }) => {
-  const [highlight, setHighlight] = useState();
+    const [highlight, setHighlight] = useState(false);
 
-  return (
-    <Container onClick={() => setHighlight(!highlight)} highlight={highlight}>
-      {children}
-    </Container>
-  );
+    return (
+        <div className={`row ${highlight ? 'active' : ''}`} onClick={() => setHighlight(!highlight)}>
+            {children}
+        </div>
+    );
 };

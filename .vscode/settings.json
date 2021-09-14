@@ -12,7 +12,7 @@
         ".gitignore": true,
         "babel.config.js": true,
         "jest.config.js": true,
-        "yarn.lock": true,
+        "yarn.lock": true
         // "dist": true
     }
 }

@@ -1,11 +1,9 @@
 import React from 'react';
 
-import { Link } from './styles';
-
 export const Button = ({ children, onClick, distance, url }) => {
-  return (
-    <Link onClick={() => onClick(distance, url)} className={`btn btn-primary ${url.includes(distance) ? 'btn-success' : ''}`}>
-      {children}
-    </Link>
-  );
+    return (
+        <button onClick={() => onClick(distance, url)} className={`${url.includes(distance) ? 'active' : ''}`}>
+            {children}
+        </button>
+    );
 };

@@ -1,7 +1,5 @@
 import React from 'react';
 
-import { Container } from './styles';
-
 export const Table = ({ children }) => {
-  return <Container>{children}</Container>;
+    return <div className="table">{children}</div>;
 };
