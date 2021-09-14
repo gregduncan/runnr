@@ -16,12 +16,12 @@ const Home = () => {
     }, [unit]);
 
     return (
-        <div>
+        <>
             <h1>Running Pace Tables</h1>
-            <Link className={`${unit !== 'kilometers' ? 'active' : ''}`} to="/?unit=miles">
+            <Link className={`lnk ${unit !== 'kilometers' ? 'active' : ''}`} to="/?unit=miles">
                 Miles
             </Link>
-            <Link className={`${unit === 'kilometers' ? 'active' : ''}`} to="/?unit=kilometers">
+            <Link className={`lnk ${unit === 'kilometers' ? 'active' : ''}`} to="/?unit=kilometers">
                 Kilometers
             </Link>
             <Button onClick={useDistanceCalc} url={distArr} distance={'5k'}>
@@ -42,8 +42,14 @@ const Home = () => {
                 Marathon
             </Button>
             <div className="flex-box">
-                <div>
-                    <Table>
+                <Table>
+                    <div className="sticky">
+                        <Toggle visible={timeArr.length > 0}>
+                            <div className="stats">
+                                <div onClick={() => setTime([])}>Time calculator</div>
+                                <Count items={timeArr} isMiles={isMiles} />
+                            </div>
+                        </Toggle>
                         <Header>
                             <Cell text={`Speed ${isMiles ? 'mph' : 'kph'}`} />
                             <Cell text={'Min'} />
@@ -56,60 +62,51 @@ const Home = () => {
                             <Cell url={distArr} distance={'full'} text={'Full'} />
                             <Cell></Cell>
                         </Header>
+                    </div>
 
-                        <Toggle visible={timeArr.length > 0}>
-                            <div className="stats">
-                                <div onClick={() => setTime([])}>Time calculator</div>
-                                <Count items={timeArr} isMiles={isMiles} />
-                            </div>
-                        </Toggle>
-
-                        {data.map(({ speed, mins, fiveK, tenK, tenMile, half, full }, index) => {
-                            return (
-                                <Row key={`${mins}${index}`}>
-                                    <Cell text={speed} />
-                                    <Cell text={mins} />
-                                    <Cell url={distArr} distance={'5k'} text={fiveK} />
-                                    <Cell url={distArr} distance={'10k'} text={tenK} />
-                                    <Toggle visible={isMiles}>
-                                        <Cell url={distArr} distance={'10mile'} text={tenMile} />
+                    {data.map(({ speed, mins, fiveK, tenK, tenMile, half, full }, index) => {
+                        return (
+                            <Row key={`${mins}${index}`}>
+                                <Cell text={speed} />
+                                <Cell text={mins} />
+                                <Cell url={distArr} distance={'5k'} text={fiveK} />
+                                <Cell url={distArr} distance={'10k'} text={tenK} />
+                                <Toggle visible={isMiles}>
+                                    <Cell url={distArr} distance={'10mile'} text={tenMile} />
+                                </Toggle>
+                                <Cell url={distArr} distance={'half'} text={half} />
+                                <Cell url={distArr} distance={'full'} text={full} />
+                                <Cell>
+                                    <button
+                                        onClick={(e) => {
+                                            e.stopPropagation();
+                                            setTime([...timeArr, { mins: mins, id: Date.now() }]);
+                                        }}
+                                    >
+                                        +
+                                    </button>
+                                    &nbsp;
+                                    <button
+                                        onClick={(e) => {
+                                            e.stopPropagation();
+                                            const first = timeArr.find((item) => item.mins === mins);
+                                            if (first && timeArr.length > 0) {
+                                                setTime([...timeArr.filter((item) => item !== first)]);
+                                            }
+                                        }}
+                                    >
+                                        -
+                                    </button>
+                                    <Toggle visible={timeArr.filter((item) => item.mins === mins).length > 0}>
+                                        <Count items={timeArr.filter((item) => item.mins === mins)} isMiles={isMiles} />
                                     </Toggle>
-                                    <Cell url={distArr} distance={'half'} text={half} />
-                                    <Cell url={distArr} distance={'full'} text={full} />
-                                    <Cell>
-                                        <button
-                                            className="btn btn-primary btn-sm"
-                                            onClick={(e) => {
-                                                e.stopPropagation();
-                                                setTime([...timeArr, { mins: mins, id: Date.now() }]);
-                                            }}
-                                        >
-                                            +
-                                        </button>
-                                        &nbsp;
-                                        <button
-                                            className="btn btn-primary btn-sm"
-                                            onClick={(e) => {
-                                                e.stopPropagation();
-                                                const first = timeArr.find((item) => item.mins === mins);
-                                                if (first && timeArr.length > 0) {
-                                                    setTime([...timeArr.filter((item) => item !== first)]);
-                                                }
-                                            }}
-                                        >
-                                            -
-                                        </button>
-                                        <Toggle visible={timeArr.filter((item) => item.mins === mins).length > 0}>
-                                            <Count items={timeArr.filter((item) => item.mins === mins)} isMiles={isMiles} />
-                                        </Toggle>
-                                    </Cell>
-                                </Row>
-                            );
-                        })}
-                    </Table>
-                </div>
+                                </Cell>
+                            </Row>
+                        );
+                    })}
+                </Table>
             </div>
-        </div>
+        </>
     );
 };
 
