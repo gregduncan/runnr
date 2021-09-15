@@ -1,7 +1,6 @@
 body {
     font-family: 'Open Sans', sans-serif;
 
-
     header {
         display: grid;
         grid-auto-columns: 1fr;
@@ -16,7 +15,7 @@ body {
             padding: 5px;
         }
     }
-    
+
     div.stats {
         display: flex;
         padding: 10px;
@@ -24,18 +23,18 @@ body {
         border-bottom: 1px solid #dee2e6;
         background-color: #c0c0c0;
     }
-    
+
     div.sticky {
         position: sticky;
         top: 0;
     }
-    
+
     div.stats {
         div {
             margin-right: 10px;
         }
     }
-    
+
     .row {
         display: grid;
         grid-auto-columns: 1fr;
@@ -51,17 +50,17 @@ body {
             background-color: #f9f9f9;
         }
     }
-    
+
     .table {
         border-left: 1px solid #dee2e6;
         border-right: 1px solid #dee2e6;
         border-bottom: 1px solid #dee2e6;
     }
-    
+
     div.flexbox {
         display: flex;
     }
-    
+
     button,
     a.lnk {
         margin: 0 5px 15px 0;
