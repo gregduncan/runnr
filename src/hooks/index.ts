@@ -1,4 +1,4 @@
-import { useDistanceCalc } from './useDistanceCalc.tsx';
+import { useDistanceCalc } from './useDistanceCalc';
 import { useQuery } from './useQuery';
 import { useUnits } from './useUnits';
 
