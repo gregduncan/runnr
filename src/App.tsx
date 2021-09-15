@@ -64,7 +64,7 @@ const Home = () => {
                         </Header>
                     </div>
 
-                    {data.map(({ speed, mins, fiveK, tenK, tenMile, half, full }, index) => {
+                    {data.map(({ speed, mins, fiveK, tenK, tenMile, half, full } : any, index) => {
                         return (
                             <Row key={`${mins}${index}`}>
                                 <Cell text={speed} />
