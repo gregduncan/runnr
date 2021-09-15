@@ -9,7 +9,7 @@ const Home = () => {
     let query = useQuery();
     let { unit, isMiles, distArr } = useUnits(query);
     const data = isMiles ? mph : kph;
-    const [timeArr, setTime] = useState([]);
+    const [timeArr, setTime] = useState<any>([]);
 
     useEffect(() => {
         setTime([]);
@@ -89,16 +89,16 @@ const Home = () => {
                                     <button
                                         onClick={(e) => {
                                             e.stopPropagation();
-                                            const first = timeArr.find((item) => item.mins === mins);
+                                            const first = timeArr.find((item: any) => item.mins === mins);
                                             if (first && timeArr.length > 0) {
-                                                setTime([...timeArr.filter((item) => item !== first)]);
+                                                setTime([...timeArr.filter((item: any) => item !== first)]);
                                             }
                                         }}
                                     >
                                         -
                                     </button>
-                                    <Toggle visible={timeArr.filter((item) => item.mins === mins).length > 0}>
-                                        <Count items={timeArr.filter((item) => item.mins === mins)} isMiles={isMiles} />
+                                    <Toggle visible={timeArr.filter((item: any) => item.mins === mins).length > 0}>
+                                        <Count items={timeArr.filter((item: any) => item.mins === mins)} isMiles={isMiles} />
                                     </Toggle>
                                 </Cell>
                             </Row>

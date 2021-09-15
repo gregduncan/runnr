@@ -1,6 +1,10 @@
 import React, { useState } from 'react';
 
-export const Row = ({ children }) => {
+type Props = {
+    children: React.ReactNode;
+};
+
+export const Row = ({ children }: Props) => {
     const [highlight, setHighlight] = useState(false);
 
     return (

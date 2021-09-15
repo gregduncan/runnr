@@ -1,4 +1,4 @@
-export const useDistanceCalc = (value, distArr) => {
+export const useDistanceCalc = (value: any, distArr: any[]) => {
     if (distArr.length === 0 || !distArr.includes(value)) {
         distArr.push(value);
     } else {

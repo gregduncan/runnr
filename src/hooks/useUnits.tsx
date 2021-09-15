@@ -1,4 +1,4 @@
-export const useUnits = (query) => {
+export const useUnits = (query: any) => {
     let unit = query.get('unit') || 'miles';
     let isMiles = unit === 'miles';
     let distance = query.get('distance');

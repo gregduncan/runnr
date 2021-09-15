@@ -1,7 +1,12 @@
 import React from 'react';
 import moment from 'moment';
 
-export const Count = ({ items, isMiles }) => {
+type Props = {
+    items: any[];
+    isMiles: Boolean;
+};
+
+export const Count = ({ items, isMiles }: Props) => {
     const date = moment('1981-12-04');
     const arr = items.map((item) => item.mins);
 
