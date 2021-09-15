@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Link } from 'react-router-dom';
 
-import { Button, Cell, Count, Header, Row, Table, Toggle } from './components';
+import { Button, Cell, Count, Detail, Header, Row, Table, Toggle } from './components';
 import { useDistanceCalc, useQuery, useUnits } from './hooks';
 import { mph, kph } from './store';
 
@@ -48,6 +48,18 @@ const Home = () => {
                             <div className="stats">
                                 <div onClick={() => setTime([])}>Time calculator</div>
                                 <Count items={timeArr} isMiles={isMiles} />
+                                <Detail>
+                                    <ul>
+                                        <li>Distance</li>
+                                        {timeArr.map((item: any, index: number) => {
+                                            return (
+                                                <li key={index} onClick={() => setTime(timeArr.filter((i: any) => item.id !== i.id))}>
+                                                    {item.mins} - {isMiles ? 'mile' : 'km'} {`${index + 1}`}
+                                                </li>
+                                            );
+                                        })}
+                                    </ul>
+                                </Detail>
                             </div>
                         </Toggle>
                         <Header>
@@ -64,7 +76,7 @@ const Home = () => {
                         </Header>
                     </div>
 
-                    {data.map(({ speed, mins, fiveK, tenK, tenMile, half, full } : any, index) => {
+                    {data.map(({ speed, mins, fiveK, tenK, tenMile, half, full }: any, index) => {
                         return (
                             <Row key={`${mins}${index}`}>
                                 <Cell text={speed} />
