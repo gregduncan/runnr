@@ -10,9 +10,7 @@ export const Detail = ({ children }: Props) => {
 
     return (
         <>
-            <button onClick={() => setVisible(!visible)}>
-                <span className="material-icons">add</span>
-            </button>
+            <button className="details" onClick={() => setVisible(!visible)}>details</button>
             <Toggle visible={visible}>{children}</Toggle>
         </>
     );

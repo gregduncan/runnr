@@ -1,23 +1,20 @@
 import React from 'react';
 import moment from 'moment';
 
+import { useSecondsCalc } from '../../hooks';
+
 type Props = {
     items: any[];
     isMiles: Boolean;
 };
 
 export const Count = ({ items, isMiles }: Props) => {
+    const epochs = items.map((item) => item.mins);
     const date = moment('1981-12-04');
-    const arr = items.map((item) => item.mins);
-
-    for (let i = 0; i < arr.length; i++) {
-        const stamp = arr[i].toString().split('.');
-        const mins = stamp[0];
-        let seconds = !stamp[1] ? '00' : stamp[1];
-        seconds = seconds.length < 2 ? `${stamp[1]}0` : seconds;
-        date.add(mins, 'm');
+    epochs.forEach(timeStamp => {
+        let seconds = useSecondsCalc(timeStamp)
         date.add(seconds, 's');
-    }
+    })
 
     return (
         <span>

@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Link } from 'react-router-dom';
 
-import { Button, Cell, Count, Detail, Header, Row, Table, Toggle } from './components';
-import { useDistanceCalc, useQuery, useUnits } from './hooks';
+import { Button, Cell, Count, Detail, DistanceToggle, Header, Row, Stat, Table, Toggle } from './components';
+import { useURLSearchParams, useQuery, useUnits } from './hooks';
 import { mph, kph } from './store';
 
 const Home = () => {
@@ -10,13 +10,14 @@ const Home = () => {
     let { unit, isMiles, distArr } = useUnits(query);
     const data = isMiles ? mph : kph;
     const [timeArr, setTime] = useState<any>([]);
+    const mins = timeArr.map((i:any) => i.mins)
 
     useEffect(() => {
         setTime([]);
     }, [unit]);
 
     return (
-        <>
+        <div className="wrapper-container">
             <h1>Running Pace Tables</h1>
             <Link className={`lnk ${unit !== 'kilometers' ? 'active' : ''}`} to="/?unit=miles">
                 Miles
@@ -24,44 +25,76 @@ const Home = () => {
             <Link className={`lnk ${unit === 'kilometers' ? 'active' : ''}`} to="/?unit=kilometers">
                 Kilometers
             </Link>
-            <Button onClick={useDistanceCalc} url={distArr} distance={'5k'}>
+            <Button onClick={useURLSearchParams} url={distArr} distance={'5k'}>
                 5k
             </Button>
-            <Button onClick={useDistanceCalc} url={distArr} distance={'10k'}>
+            <Button onClick={useURLSearchParams} url={distArr} distance={'10k'}>
                 10k
             </Button>
             <Toggle visible={isMiles}>
-                <Button onClick={useDistanceCalc} url={distArr} distance={'10mile'}>
+                <Button onClick={useURLSearchParams} url={distArr} distance={'10mile'}>
                     10 mile
                 </Button>
             </Toggle>
-            <Button onClick={useDistanceCalc} url={distArr} distance={'half'}>
+            <Button onClick={useURLSearchParams} url={distArr} distance={'half'}>
                 Half
             </Button>
-            <Button onClick={useDistanceCalc} url={distArr} distance={'full'}>
+            <Button onClick={useURLSearchParams} url={distArr} distance={'full'}>
                 Marathon
             </Button>
             <div className="flex-box">
                 <Table>
                     <div className="sticky">
-                        <Toggle visible={timeArr.length > 0}>
-                            <div className="stats">
-                                <div onClick={() => setTime([])}>Time calculator</div>
-                                <Count items={timeArr} isMiles={isMiles} />
+                        <div className="stats">
+                            <span onClick={() => setTime([])}>Time calculator</span>&nbsp;
+                            <Toggle visible={timeArr.length > 0}>
+                                <Count items={timeArr} isMiles={isMiles} />&nbsp;
                                 <Detail>
                                     <ul>
                                         <li>Distance</li>
                                         {timeArr.map((item: any, index: number) => {
                                             return (
                                                 <li key={index} onClick={() => setTime(timeArr.filter((i: any) => item.id !== i.id))}>
-                                                    {item.mins} - {isMiles ? 'mile' : 'km'} {`${index + 1}`}
+                                                    {isMiles ? 'mile' : 'km'} {`${index + 1}`} - {item.mins}
                                                 </li>
                                             );
                                         })}
                                     </ul>
                                 </Detail>
-                            </div>
-                        </Toggle>
+                            </Toggle>
+                            <Toggle visible={isMiles}>
+                                <DistanceToggle timeArr={timeArr} distance={3.1} label={'5k'}>
+                                    <Stat mins={mins} integer={3} decimal={1} />
+                                </DistanceToggle>
+                                <DistanceToggle timeArr={timeArr} distance={6.2} label={'10k'}>
+                                    <Stat mins={mins} integer={6} decimal={2} />    
+                                </DistanceToggle>
+                                <DistanceToggle timeArr={timeArr} distance={10} label={'10m'}>
+                                    <Stat mins={mins} integer={10} decimal={0} />
+                                </DistanceToggle>
+                                <DistanceToggle timeArr={timeArr} distance={13.1} label={'half'}>
+                                    <Stat mins={mins} integer={13} decimal={1} />
+                                </DistanceToggle>
+                                <DistanceToggle timeArr={timeArr} distance={26.2} label={'full'}>
+                                    <Stat mins={mins} integer={26} decimal={2} />   
+                                </DistanceToggle>
+                            </Toggle>
+                            <Toggle visible={!isMiles}>
+                                <DistanceToggle timeArr={timeArr} distance={5} label={'5k'}>
+                                    <Stat mins={mins} integer={5} decimal={0} /> 
+                                </DistanceToggle>
+                                <DistanceToggle timeArr={timeArr} distance={10} label={'10k'}>
+                                    <Stat mins={mins} integer={10} decimal={0} /> 
+                                </DistanceToggle>
+                                <DistanceToggle timeArr={timeArr} distance={21} label={'half'}>
+                                    <Stat mins={mins} integer={21} decimal={0} /> 
+                                </DistanceToggle>
+                                <DistanceToggle timeArr={timeArr} distance={42.1} label={'full'}>
+                                    <Stat mins={mins} integer={42} decimal={1} />
+                                </DistanceToggle>
+                            </Toggle>
+                        </div>
+
                         <Header>
                             <Cell text={`Speed ${isMiles ? 'mph' : 'kph'}`} />
                             <Cell text={'Min'} />
@@ -118,7 +151,7 @@ const Home = () => {
                     })}
                 </Table>
             </div>
-        </>
+        </div>
     );
 };
 

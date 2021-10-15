@@ -1,5 +1,19 @@
 body {
     font-family: 'Open Sans', sans-serif;
+    background: linear-gradient(180deg,#e1e1e1 0%,#c8c8c8 100%);
+    padding: 0;
+    margin: 0;
+    color: #524f55;
+
+    .wrapper-container {
+        max-width: 1800px;
+        min-width: 320px;
+        margin: 60px auto;
+        background: linear-gradient(270deg,#fbfbfb 0%,#f4f4f4 100%);
+        padding: 15px;
+        border-radius: 20px;
+        box-shadow: -5px 10px 23px 0 #bbbbbb;
+    }
 
     header {
         display: grid;
@@ -17,11 +31,28 @@ body {
     }
 
     div.stats {
-        display: flex;
         padding: 10px;
         box-sizing: border-box;
         border-bottom: 1px solid #dee2e6;
         background-color: #c0c0c0;
+
+        button {
+            padding: 0;
+            margin: 0;
+        }
+
+        .stat {
+            display: inline-block;
+            margin-right: 10px;
+            span {
+                font-weight: bold;
+            }
+        }
+
+        .details {
+            display: inline-block;
+            margin-right: 5px;
+        }
     }
 
     div.sticky {
