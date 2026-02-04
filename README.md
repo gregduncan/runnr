@@ -8,7 +8,7 @@ A running pace calculator that helps runners estimate race times based on their 
 - **Unit Toggle**: Switch between miles and kilometers
 - **Race Distance Filtering**: Filter by common race distances (5K, 10K, 10 mile, Half Marathon, Marathon)
 - **Time Calculator**: Add individual mile/km splits to calculate cumulative times
-- **Race Time Estimates**: See projected finish times for different race distances based on your pace
+- **Race Time Estimates**: See projected finish times for different race distances based on your pace.
 
 ## Tech Stack
 
