@@ -1,14 +1,13 @@
-import React, { Fragment } from 'react';
+import { Fragment, ReactNode } from 'react';
 
 type Props = {
-    children?: React.ReactNode;
+    children?: ReactNode;
     visible: boolean;
 };
 
 export const Toggle = ({ visible, children }: Props) => {
     if (visible) {
         return <Fragment>{children}</Fragment>;
-    } else {
-        return null;
     }
+    return null;
 };

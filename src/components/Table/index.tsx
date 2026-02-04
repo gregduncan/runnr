@@ -1,9 +1,9 @@
-import React from 'react';
+import { ReactNode } from 'react';
 
 type Props = {
-    children: React.ReactNode;
+    children: ReactNode;
 };
 
 export const Table = ({ children }: Props) => {
-    return <div className="table">{children}</div>;
+    return <div className="overflow-hidden">{children}</div>;
 };

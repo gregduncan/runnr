@@ -16,8 +16,8 @@ A running pace calculator that helps runners estimate race times based on their 
 - TypeScript 5
 - Vite 7
 - React Router 6
+- Tailwind CSS 4
 - Day.js
-- Sass
 
 ## Getting Started
 
