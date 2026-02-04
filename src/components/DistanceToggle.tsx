@@ -1,18 +1,18 @@
 import { ReactNode } from 'react';
 import { Toggle } from './Toggle';
+import { TimeEntry } from '../types';
 
 type Props = {
-  timeArr: any[];
+  timeArr: TimeEntry[];
   label: string;
   distance: number;
   children?: ReactNode;
 };
 
 export const DistanceToggle = ({ timeArr, label, distance, children }: Props) => {
-  const mins = timeArr.map((item: any) => item.mins);
-  if (mins.length === 0) return null;
+  if (timeArr.length === 0) return null;
 
-  const distanceAchieved = mins.length >= distance;
+  const distanceAchieved = timeArr.length >= distance;
   return (
     <Toggle visible={distanceAchieved}>
       <span className="inline-flex items-center gap-1.5 bg-white/20 px-3 py-1 rounded-full text-white text-sm">

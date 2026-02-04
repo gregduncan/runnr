@@ -1,9 +1,10 @@
 import dayjs from 'dayjs';
 
 import { useSecondsCalc } from '../hooks';
+import { TimeEntry } from '../types';
 
 type Props = {
-  items: any[];
+  items: TimeEntry[];
   isMiles: boolean;
 };
 
@@ -11,7 +12,7 @@ export const Count = ({ items, isMiles }: Props) => {
   const epochs = items.map((item) => item.mins);
   let date = dayjs('1981-12-04');
   epochs.forEach((timeStamp) => {
-    let seconds = useSecondsCalc(timeStamp);
+    const seconds = useSecondsCalc(timeStamp);
     date = date.add(seconds, 'second');
   });
 

@@ -4,7 +4,7 @@ type Props = {
   children?: ReactNode;
   distance?: string;
   url?: string;
-  text?: any;
+  text?: string | number;
   highlight?: boolean;
 };
 

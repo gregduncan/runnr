@@ -15,13 +15,14 @@ import {
 } from './components';
 import { useURLSearchParams, useQuery, useUnits } from './hooks';
 import { mph, kph } from './store';
+import { TimeEntry, PaceData } from './types';
 
 const Home = () => {
-  let query = useQuery();
-  let { unit, isMiles, distArr } = useUnits(query);
-  const data = isMiles ? mph : kph;
-  const [timeArr, setTime] = useState<any>([]);
-  const mins = timeArr.map((i: any) => i.mins);
+  const query = useQuery();
+  const { unit, isMiles, distArr } = useUnits(query);
+  const data: PaceData[] = isMiles ? mph : kph;
+  const [timeArr, setTime] = useState<TimeEntry[]>([]);
+  const mins = timeArr.map((entry) => entry.mins);
 
   useEffect(() => {
     setTime([]);
@@ -113,10 +114,10 @@ const Home = () => {
                         <li className="font-semibold border-b border-slate-700 pb-2 mb-2">
                           Splits
                         </li>
-                        {timeArr.map((item: any, index: number) => (
+                        {timeArr.map((item, index) => (
                           <li
-                            key={index}
-                            onClick={() => setTime(timeArr.filter((i: any) => item.id !== i.id))}
+                            key={item.id}
+                            onClick={() => setTime(timeArr.filter((entry) => entry.id !== item.id))}
                             className="py-1.5 px-2 hover:bg-slate-700 rounded cursor-pointer flex justify-between"
                           >
                             <span>
@@ -178,7 +179,7 @@ const Home = () => {
             </div>
 
             {/* Table Body */}
-            {data.map(({ speed, mins, fiveK, tenK, tenMile, half, full }: any, index) => (
+            {data.map(({ speed, mins, fiveK, tenK, tenMile, half, full }, index) => (
               <Row key={`${mins}${index}`}>
                 <Cell text={speed} />
                 <Cell text={mins} highlight />
@@ -194,7 +195,7 @@ const Home = () => {
                     <button
                       onClick={(e) => {
                         e.stopPropagation();
-                        setTime([...timeArr, { mins: mins, id: Date.now() }]);
+                        setTime([...timeArr, { mins: String(mins), id: Date.now() }]);
                       }}
                       className="w-7 h-7 rounded-full bg-emerald-500 hover:bg-emerald-400 text-white font-bold text-sm transition-colors flex items-center justify-center"
                     >
@@ -203,19 +204,21 @@ const Home = () => {
                     <button
                       onClick={(e) => {
                         e.stopPropagation();
-                        const first = timeArr.find((item: any) => item.mins === mins);
-                        if (first && timeArr.length > 0) {
-                          setTime([...timeArr.filter((item: any) => item !== first)]);
+                        const first = timeArr.find((item) => item.mins === String(mins));
+                        if (first) {
+                          setTime(timeArr.filter((item) => item !== first));
                         }
                       }}
                       className="w-7 h-7 rounded-full bg-slate-600 hover:bg-slate-500 text-white font-bold text-sm transition-colors flex items-center justify-center"
                     >
                       -
                     </button>
-                    <Toggle visible={timeArr.filter((item: any) => item.mins === mins).length > 0}>
+                    <Toggle
+                      visible={timeArr.filter((item) => item.mins === String(mins)).length > 0}
+                    >
                       <span className="ml-1 text-xs bg-purple-500 text-white px-2 py-0.5 rounded-full">
                         <Count
-                          items={timeArr.filter((item: any) => item.mins === mins)}
+                          items={timeArr.filter((item) => item.mins === String(mins))}
                           isMiles={isMiles}
                         />
                       </span>

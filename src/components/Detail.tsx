@@ -6,7 +6,7 @@ type Props = {
 };
 
 export const Detail = ({ children }: Props) => {
-  const [visible, setVisible] = useState<boolean>(false);
+  const [visible, setVisible] = useState(false);
 
   return (
     <div className="relative inline-block">
