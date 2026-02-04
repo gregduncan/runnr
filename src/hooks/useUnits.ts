@@ -1,13 +1,13 @@
-export const useUnits = (query: any) => {
-    let unit = query.get('unit') || 'miles';
-    let isMiles = unit === 'miles';
-    let distance = query.get('distance');
-    let distArr = distance ? distance.split('|') : [];
+export const useUnits = (query: URLSearchParams) => {
+  const unit = query.get('unit') || 'miles';
+  const isMiles = unit === 'miles';
+  const distance = query.get('distance');
+  const distArr = distance ? distance : '';
 
-    return {
-        unit: unit,
-        isMiles: isMiles,
-        distance: distance,
-        distArr: distArr,
-    };
+  return {
+    unit,
+    isMiles,
+    distance,
+    distArr,
+  };
 };
