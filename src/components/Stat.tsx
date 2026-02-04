@@ -1,6 +1,6 @@
 import dayjs from 'dayjs';
 
-import { useSecondsCalc } from '../../hooks';
+import { useSecondsCalc } from '../hooks';
 
 type Props = {
   mins: string[];

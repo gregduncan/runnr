@@ -1,12 +1,10 @@
-import { Button } from './Button';
-import { Cell } from './Cell';
-import { Count } from './Count';
-import { Detail } from './Detail';
-import { DistanceToggle } from './DistanceToggle';
-import { Header } from './Header';
-import { Row } from './Row';
-import { Stat } from './Stat';
-import { Table } from './Table';
-import { Toggle } from './Toggle';
-
-export { Button, Cell, Count, Detail, DistanceToggle, Header, Row, Stat, Table, Toggle };
+export { Button } from './Button';
+export { Cell } from './Cell';
+export { Count } from './Count';
+export { Detail } from './Detail';
+export { DistanceToggle } from './DistanceToggle';
+export { Header } from './Header';
+export { Row } from './Row';
+export { Stat } from './Stat';
+export { Table } from './Table';
+export { Toggle } from './Toggle';

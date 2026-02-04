@@ -1,5 +1,5 @@
 import { ReactNode } from 'react';
-import { Toggle } from '..';
+import { Toggle } from './Toggle';
 
 type Props = {
   timeArr: any[];

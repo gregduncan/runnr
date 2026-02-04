@@ -1,5 +1,5 @@
 import { ReactNode, useState } from 'react';
-import { Toggle } from '..';
+import { Toggle } from './Toggle';
 
 type Props = {
   children: ReactNode;
